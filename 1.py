@@ -12,4 +12,8 @@ cap.set(3,800)
 cap.set(4,600)
 
 while True:
-    ok , img = 
+    ok , img = cap.read()
+
+    img = cv2.flip(img,1)
+    cv2.imshow("snack game [python ai]" , img)
+
